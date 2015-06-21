@@ -4,91 +4,92 @@
         <meta charset="utf-8">
         <style>
         label {
-            display: block;
-        }
+    display: block;
+}
 
-        fieldset {
-            border: none;
-        }
+fieldset {
+    border: none;
+}
 
-        #email,#firstname,#tel {
-            width: 30%;
-        }
+#email,#firstname,#tel {
+    width: 30%;
+}
 
-        .required {
-            background-color: #000;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 12px;
-            padding: 2px 4px;
-        }
+.required {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 4px;
+}
 
-        label.radio {
-            display: block;
-        }
+label.radio {
+    display: block;
+}
 
-        input,textarea {
-            border-color: solid 3px #000;
-        }
+input,textarea {
+    border-color: solid 3px #000;
+}
 
-        button {
-        		background-color: #000;
-        		border-radius: 0 10px 0 10px / 0 10px 0 10px;
-        		color: #fff;
-        		padding: 10px 20px;
-        		position: relative;
-        		width: 200px;
-        		text-align: center;
-        	}
-        	button:after {
-        		content: "▲";
-        		font-size: 10px;
-        		display: inline-block;
-        		position: absolute;
-        		top: 12px;
-          		left: 126px;
-        		-webkit-transform: rotate(90deg);
-        		   -moz-transform: rotate(90deg);
-        		    -ms-transform: rotate(90deg);
-        		     -o-transform: rotate(90deg);
-        		        transform: rotate(90deg);
-        	}
+button {
+		background-color: #000;
+		border-radius: 0 10px 0 10px / 0 10px 0 10px;
+		color: #fff;
+		padding: 10px 20px;
+		position: relative;
+		width: 200px;
+		text-align: center;
+	}
+	button:after {
+		content: "▲";
+		font-size: 10px;
+		display: inline-block;
+		position: absolute;
+		top: 12px;
+  		left: 126px;
+		-webkit-transform: rotate(90deg);
+		   -moz-transform: rotate(90deg);
+		    -ms-transform: rotate(90deg);
+		     -o-transform: rotate(90deg);
+		        transform: rotate(90deg);
+	}
 
         </style>
     </head>
     <body>
         <h1>お問い合わせ</h1>
-        <form method="post" enctype="multipart/form-data" id="form" action="">
-            <fieldset>
-                <label for="fi2stname">お名前 <span class="required">必須</span></label>
-                <input name="firstname" id="firstname" type="text" tabindex="1" />
-            </fieldset>
-            <fieldset>
-                <label for="email">メールアドレス <span class="required">必須</span></label>
-                <input name="email" id="email" type="email" tabindex="1" />
-            </fieldset>
-            
-            <fieldset>
-                <label for="tel">電話番号</label>
-                <input name="tel" id="tel" type="tel" tabindex="4" />
-            </fieldset>
-            <fieldset>
-                <label for="radio">ご住所</label>
-                <input name="email" id="email" type="email" tabindex="1" />
-            </fieldset>
-            <fieldset>    
-            お問い合わせの種類：<br>
-                <label class="radio"><input type="radio" name="" value="A" />Aについて</label>
-                <label class="radio"><input type="radio" name="" value="B" />Bについて</label>
-                <label class="radio"><input type="radio" name="" value="C" />Cについて</label>
-            </fieldset>
-            <fieldset> 
-                <label for="question">お問い合わせ内容　<span class="required">必須</span></label>
-                <textarea name="question" rows="4" cols="40"></textarea>
-            </fieldset>
-                    <button type="submit" value="確認画面へ">確認画面へ</button>
+<form method="post" enctype="multipart/form-data" id="form" action="">
+    <fieldset>
+        <label for="fi2stname">お名前 <span class="required">必須</span></label>
+        <input name="firstname" id="firstname" type="text" tabindex="1" />
+    </fieldset>
+    <fieldset>
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input name="email" id="email" type="email" tabindex="1" />
+    </fieldset>
+    
+    <fieldset>
+        <label for="tel">電話番号</label>
+        <input name="tel" id="tel" type="tel" tabindex="4" />
+    </fieldset>
+    <fieldset>
+        <label for="radio">ご住所</label>
+        <input name="email" id="email" type="email" tabindex="1" />
+    </fieldset>
+    <fieldset>    
+    お問い合わせの種類：<br>
+        <label class="radio"><input type="radio" name="" value="A" />Aについて</label>
+        <label class="radio"><input type="radio" name="" value="B" />Bについて</label>
+        <label class="radio"><input type="radio" name="" value="C" />Cについて</label>
+    </fieldset>
+    <fieldset> 
+        <label for="question">お問い合わせ内容　<span class="required">必須</span></label>
+        <textarea name="question" rows="4" cols="40"></textarea>
+    </fieldset>
+            <button type="submit" value="確認画面へ">確認画面へ</button>
 
-        </form>
+</form>
+
 
 
     </body>
