@@ -7,19 +7,148 @@
             <header>
             </header>
             <main>
-                <form>
+                <h1>新規会員登録 <small aria-hidden="true">※は必須項目です</small></h1>
+                <form action="index.html">
                     <legend>住所</legend>
                     <table>
                         <tbody>
                             <tr>
                                 <th>
-                                    <label for="">郵便番号　※</label>
+                                    <label for="">郵便番号　<abbr class="required" title="必須項目">※</abbr></label>
+                                </th>
+                            <td>
+                                <input type="text" aria-required="true" title="郵便番号上3桁">-<input type="text" aria-required="true" title="郵便番号下4桁">
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="nihon">都道府県</label>
                                 </th>
                                 <td>
+                                    <select name="nihon" id="nihon">
+                                        <option value="東京">東京</option>
+                                        <option value="大阪">大阪</option>
+                                        <option value="福岡">福岡</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="city">市町村</label>
+                                </th>
+                                <td>
+                                    <input type="text" aria-required="true" id="city">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="banti">番地・マンション</label>
+                                </th>
+                                <td>
+                                    <input type="text" aria-required="true" id="banti">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <legend>お名前・性別</legend>
+                    <table border="0">
+                    <td rowspan="4">
+                        <label for="">氏名　※</label>
+                    </td>
+                    <td>
+                        <label for="firstname">性</label>
+                    </td>
+                    <tr>
+                        <td>
+                            <input name="firstname" id="firstname" type="text" />
+                        </td>
+                    </tr>
+                    <td>
+                        <label for="secondname">名</label>
+                    </td>
+                    <tr>
+                        <td>
+                            <input name="secondname" id="secondname" type="text" />
+                        </td>
+                    </tr>
+                    </table>
+
+                    <table border="0">
+                    <td rowspan="4">
+                        <label for="">氏名(ふりがな)</label>
+                    </td>
+                    <td>
+                        <label for="firstname">性</label>
+                    </td>
+                    <tr>
+                        <td>
+                            <input name="firstname" id="firstname" type="text" />
+                        </td>
+                    </tr>
+                    <td>
+                        <label for="secondname">名</label>
+                    </td>
+                    <tr>
+                        <td>
+                            <input name="secondname" id="secondname" type="text" />
+                        </td>
+                    </tr>
+                    </table>
+
+                    <table border="0">
+                    <td rowspan="1">
+                        <label for="">性別　※</label>
+                    </td>
+                    <td>
+                        <label class="radio"><input type="radio" name="" value="man" />男性</label>
+                        <td>
+                            <label class="radio"><input type="radio" name="" value="lady" />女性</label>
+                        </td>
+                    </td>
+                    </table>
+                    <legend>連絡先</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label id="label--tel">電話番号　※</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="tel0" name="tel0" size="3" aria-required="true" aria-describedby="label--tel" title="市外局番" />
+                                    <span>-</span>
+                                    <input type="text" id="tel1" name="tel1" size="3" aria-required="true" aria-describedby="label--tel" title="市内局番" />
+                                    <span>-</span>
+                                    <input type="text" id="tel2" name="tel2" size="4" aria-required="true" aria-describedby="label--tel" title="加入者番号" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="email" id="label--email">メールアドレス　※</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="email" name="email" aria-labelledby="label--email" aria-describedby="description--email" />
+                                    <span class="error" role="alert" aria-live="assertive" id="alert--email">メールアドレスを正しく入力してください。</span>
+                                    <span class="help-text" id="description--email">半角英数で入力してください。</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="email-confirm" id="label--email-confirm">メールアドレス（確認用）　※</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="email-confirm" name="email-confirm" aria-labelledby="label--email-confirm" aria-describedby="description--email-confirm" />
+                                    <span class="help-text" id="description--email-confirm">確認のため再度入力してください。</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-footer">
+                        <label for="terms-of-use">
+                            <input type="checkbox" value="1" id="terms-of-use" name="terms-of-use" />
+                            <a href="#">利用規約</a>および<a href="#">ポリシー</a>に同意します。
+                        </label>
+                        <input type="submit" value="確認する" />
+                    </div>
                 </form>
             </main>
         </div>
